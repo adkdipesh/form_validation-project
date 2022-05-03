@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>Survey Form Registration with validation</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+	<h1 id= "title" style="color: rgb(99,100,0);">Survey Form</h1>
+
+	<!-- Create Form -->
+	<form name="FormReg" id="form" method="" action="" >
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name:
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				name="name"
+				placeholder="Enter your name"  >
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email:
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				name="email"
+				placeholder="Enter your email" >
+		</div>
+
+		<div class="inlinecss-control" style="margin: 25px 0px; ">
+			<span style="margin-left:0px; color:blue;">Age:</span>&nbsp;<input type="text"
+				name="age"
+				placeholder="Enter your age" style="padding: 10px; width: 20%; margin-right:25px;">
+
+				<span style="margin-left:0px; color:blue;">Telephone:</span>&nbsp;<input type="text" 
+                        size="20" name="Telephone" placeholder = "Enter Your Phone Number" style="padding: 10px; width: 36%";>
+        </div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Which option best describes you?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="student">Student</option>
+				<option value="intern">Intern</option>
+				<option value="professional">
+					Professional
+				</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Are you really sure in making big impact in programming world ?
+			</label>
+
+			<!-- Input Type Radio Button -->
+
+				<input type="radio"
+					id="slct-1"
+					name="slct">Yes
+				<span style="margin: 0 20px"></span>
+
+				<input type="radio"
+					id="slct-2"
+					name="slct">No
+				<span style="margin: 0 20px"></span>
+
+				<input type="radio"
+					id="slct-3"
+					name="slct">Maybe</input>
+
+		</div>
+
+		<div class="form-control">
+			<label>Languages and Frameworks known
+				<small>(Check all that apply)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="line-1" style="color:black;">
+				<input type="checkbox"
+					name="inp">HTML</input>
+				<span style="margin: 0 10px;"></span>
+				<input type="checkbox"
+					name="inp">CSS</input>
+				<span style="margin: 0 10px;"></span>
+				<input type="checkbox"
+					name="inp">Bootstrap</input>
+				<span style="margin: 0 10px;"></span>
+				<input type="checkbox"
+					name="inp">TailWind</input>
+			</label>
+			<label for="line-2" style="color:black;">
+				<input type="checkbox"
+					name="inp">JavaScript</input>
+				<span style="margin: 0 10px;"></span>
+				<input type="checkbox"
+					name="inp">Vue.js</input>
+				<span style="margin: 0 10px;"></span>
+				<input type="checkbox"
+					name="inp">Node.js</input>
+				<span style="margin: 0 10px;"></span>
+				<input type="checkbox"
+					name="inp">ReactJS</input>
+			</label>
+			<label for="line-3" style="color:black;">
+				<input type="checkbox"
+					name="inp">C</input>
+				<span style="margin: 0 10px;"></span>
+				<input type="checkbox"
+					name="inp">C++</input>
+				<span style="margin: 0 10px;"></span>
+				<input type="checkbox"
+					name="inp">C#</input>
+				<span style="margin: 0 10px;"></span>
+				<input type="checkbox"
+					name="inp">Java</input></label>
+			<label for="line-4" style="color:black;">
+				<input type="checkbox"
+					name="inp">Python</input>
+				<span style="margin: 0 10px;"></span>
+				<input type="checkbox"
+					name="inp">Django</input>
+				<span style="margin: 0 10px;"></span>
+				<input type="checkbox"
+					name="inp">PHP</input>
+				<span style="margin: 0 10px;"></span>
+				<input type="checkbox"
+					name="inp">Laravel</input>
+				<span style="margin: 0 10px;"></span>
+				<input type="checkbox"
+					name="inp">FLutter</input></label>
+			<label for="line-5" style="color:black;">
+				<input type="checkbox"
+					name="inp">Ruby On Rails</input></label>
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Any Messages:
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment" cols="50"
+				placeholder="Enter your comment here" style="background:rgb(183, 190, 190)">
+			</textarea>
+		</div>
+
+		<p>
+		<button onclick="validatefunction()" type="submit" value="submit">Submit</button>
+
+        <input type="reset" value="Reset" name="Reset" style="background:darkcyan; margin-left:30px; padding:3px 30px; border: 2px solid #777; border-radius:20px; font-size:21px; color:white;">
+		</p>
+
+	<footer style="display:block; background-image: linear-gradient(red, yellow, green); margin-top: 20px;">
+		&copy; 2022 Resistration Form &nbsp <span style="color:white; font-size:15px;">|</span> Design By <a href="#" style="text-decoration:none; color:black;">Dipesh Adhikari</a>
+	</footer>
+	</form>
+</body>
+
+</html>

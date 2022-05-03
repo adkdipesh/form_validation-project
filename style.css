@@ -1,0 +1,78 @@
+		*{
+            margin: 0;
+
+        }
+
+        /* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: rgba(107, 100, 100, 0.5);
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		h1:hover {
+            text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+                0 3px 0 #ccc, 0 4px 0 #ccc,
+                0 5px 0 #ccc, 0 6px 0 #ccc,
+                0 7px 0 #ccc, 0 8px 0 #ccc,
+                0 9px 0 #ccc, 0 10px 0 #ccc,
+                0 11px 0 #ccc, 0 12px 0 #ccc,
+                0 20px 30px rgba(0, 0, 0, 0.5);
+        }
+		
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #d6e2eb;
+			max-width: 500px;
+			margin: 20px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+			color: blue;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #5121c9;
+			color: aliceblue;
+			border: 2px solid #777;
+			border-radius: 20px;
+			font-family: inherit;
+			font-size: 21px;
+			display: inline;
+			width: 60%;
+			margin: 10px 10px 20px -20px;
+		}
